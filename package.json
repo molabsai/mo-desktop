@@ -1,30 +1,22 @@
 {
-  "name": "electron-quick-start-typescript",
+  "name": "mo-desktop",
   "version": "1.0.0",
-  "description": "A minimal Electron application written with Typescript",
+  "main": "app/lib/main.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "lint": "eslint -c .eslintrc --ext .ts ./src",
-    "start": "npm run build && electron ./dist/main.js",
-    "dev": "nodemon --watch src --ext js,ts --exec 'npm start'"
+    "lint": "eslint -c .eslintrc --ext .ts ./app/src",
+    "start": "npm run build && electron ./app/lib/main.js --remote-debugging-port=8315",
+    "dev": "nodemon --watch app/src --ext js,ts --exec 'npm start'",
+    "postinstall": "electron-builder install-app-deps",
+    "package": "npm run build && electron-builder --mac"
   },
-  "repository": "https://github.com/electron/electron-quick-start-typescript",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo",
-    "typescript"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
   "devDependencies": {
     "@types/electron-positioner": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "electron": "^16.0.2",
+    "electron-builder": "^22.14.5",
     "eslint": "^7.32.0",
     "nodemon": "^2.0.15",
     "typescript": "^4.5.2"
