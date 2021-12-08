@@ -6,10 +6,6 @@ const url = `${server}/update/${process.platform}/${app.getVersion()}`;
 
 autoUpdater.setFeedURL({ provider: "generic", url });
 
-setInterval(() => {
-  autoUpdater.checkForUpdatesAndNotify();
-}, 1000 * 60 * 15);
-
 autoUpdater.on("update-downloaded", (event, releaseNotes, releaseName) => {
   const dialogOpts = {
     type: "info",
@@ -29,4 +25,10 @@ autoUpdater.on("update-downloaded", (event, releaseNotes, releaseName) => {
 
 autoUpdater.on("error", (message) => {
   console.error("There was a problem updating the application:", message);
+});
+
+app.on("ready", () => {
+  setInterval(() => {
+    autoUpdater.checkForUpdatesAndNotify();
+  }, 1000 * 60 * 15);
 });
