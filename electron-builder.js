@@ -14,5 +14,11 @@ module.exports = {
     category: "public.app-category.games",
     target: "dmg",
   },
+  win: {
+    target: "nsis",
+  },
+  linux: {
+    target: "tar.gz",
+  },
   // TODO: target win and linux
 };
