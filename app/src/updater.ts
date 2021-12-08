@@ -28,6 +28,7 @@ autoUpdater.on("error", (message) => {
 });
 
 app.on("ready", () => {
+  autoUpdater.checkForUpdatesAndNotify();
   setInterval(() => {
     autoUpdater.checkForUpdatesAndNotify();
   }, 1000 * 60 * 15);
