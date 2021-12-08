@@ -37,37 +37,13 @@ app.on("ready", () => {
 
   const mb = menubar({
     tray,
-    // index: `file://${path.join(__dirname, "..", "index.html")}`,
-    // index: false,
     index: "https://life.molabs.ai/",
     activateWithApp: true,
-    // index: false,
     preloadWindow: true,
     browserWindow: {
       width: 800,
       height: 600,
     },
-  });
-
-  mb.on("after-create-window", () => {
-    // mb.showWindow();
-    // mb.window.loadURL("https://life.molabs.ai/");
-  });
-
-  mb.on("show", () => {
-    // Disable X-Frame-Options to allow inner iframe to load
-    // TODO: add X-Frame-Options to life.molabs.ai?
-    // mb.window.webContents.session.webRequest.onHeadersReceived(
-    //   { urls: ["*://*/*"] },
-    //   (d, c) => {
-    //     if (d.responseHeaders["X-Frame-Options"]) {
-    //       delete d.responseHeaders["X-Frame-Options"];
-    //     } else if (d.responseHeaders["x-frame-options"]) {
-    //       delete d.responseHeaders["x-frame-options"];
-    //     }
-    //     c({ cancel: false, responseHeaders: d.responseHeaders });
-    //   }
-    // );
   });
 
   mb.on("ready", async () => {
