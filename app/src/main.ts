@@ -1,6 +1,7 @@
 import { app, Tray, Menu, shell } from "electron";
 import { menubar } from "menubar";
 import path from "path";
+import "./updater";
 
 // TODO: fix the menu bar icon doing nothing on repeated click
 //       https://github.com/maxogden/menubar/issues/311

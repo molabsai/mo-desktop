@@ -20,5 +20,4 @@ module.exports = {
   linux: {
     target: "tar.gz",
   },
-  // TODO: target win and linux
 };
