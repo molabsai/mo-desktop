@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "mo-desktop",
   "version": "1.0.0",
   "main": "app/lib/main.js",
