@@ -24,6 +24,6 @@
   },
   "dependencies": {
     "electron-updater": "^4.6.1",
-    "menubar": "^9.1.0"
+    "menubar": "^9.1.1"
   }
 }
