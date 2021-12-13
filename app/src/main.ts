@@ -7,13 +7,13 @@ import "./updater";
 //       https://github.com/maxogden/menubar/issues/311
 
 // Not sure why `productName` from `electron-builder.js` isn't being used for the app name, so we'll set it manually here.
-app.setName("MO Labs");
+app.setName("MO");
 
 app.on("ready", () => {
   const tray = new Tray(
     path.join(__dirname, "..", "resources", "tray-icon.png")
   );
-  tray.setToolTip("MO Labs");
+  tray.setToolTip("MO");
 
   const contextMenu = Menu.buildFromTemplate([
     {

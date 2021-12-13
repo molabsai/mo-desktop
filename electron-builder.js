@@ -4,7 +4,7 @@
 
 module.exports = {
   appId: "ai.molabs.desktop",
-  productName: "MO Labs",
+  productName: "MO",
   directories: {
     output: "build",
     buildResources: "app/resources",
