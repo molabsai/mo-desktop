@@ -17,9 +17,6 @@ module.exports = {
     hardenedRuntime: true,
     entitlements: "app/entitlements.mac.plist",
   },
-  win: {
-    target: "nsis",
-  },
   linux: {
     target: "tar.gz",
   },
