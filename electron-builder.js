@@ -10,9 +10,12 @@ module.exports = {
     buildResources: "app/resources",
   },
   files: ["package.json", "node_modules", "app/**/*"],
+  afterSign: "electron-builder-notarize",
   mac: {
     category: "public.app-category.games",
     target: "dmg",
+    hardenedRuntime: true,
+    entitlements: "app/entitlements.mac.plist",
   },
   win: {
     target: "nsis",
