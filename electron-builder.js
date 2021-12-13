@@ -17,7 +17,4 @@ module.exports = {
     hardenedRuntime: true,
     entitlements: "app/entitlements.mac.plist",
   },
-  linux: {
-    target: "tar.gz",
-  },
 };
