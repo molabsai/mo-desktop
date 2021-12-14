@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "mo-desktop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "app/lib/main.js",
   "scripts": {
     "build": "tsc",
