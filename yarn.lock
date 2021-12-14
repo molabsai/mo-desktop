@@ -1928,10 +1928,10 @@ matcher@^3.0.0:
   dependencies:
     escape-string-regexp "^4.0.0"
 
-menubar@^9.1.0:
-  version "9.1.0"
-  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.1.0.tgz#194acc6b50eb36efff60aab77c038a027e0ca2d5"
-  integrity sha512-JPnaswwTKjPj11mn52TkeAohlzpfUb5R8zbwpESvFVIejIqj0IYFw6I3H5+n3Pph5VT2LhxLvm0eURTAwjXpxg==
+menubar@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/menubar/-/menubar-9.1.1.tgz#0ab278fc15d9e225714bd1f74038fa1b6650fdcc"
+  integrity sha512-nh/Gj1o90389RqtAjzJmFUnXxcN008fFoXXSILXTFszED64BIMpC3ZYYl6hIfNiLoKFBph2bwqHpW+BO0y//fQ==
   dependencies:
     electron-positioner "^4.1.0"
 
