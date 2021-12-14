@@ -16,8 +16,8 @@ app.on("ready", () => {
     height: height * 0.6,
     autoHideMenuBar: true,
     titleBarStyle: "hidden",
+    backgroundColor: "#000",
   });
-
   window.loadURL("https://life.molabs.ai/");
 
   // Make the window draggable via anywhere in the body

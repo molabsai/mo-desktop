@@ -10,7 +10,7 @@
     "start": "npm run build && electron ./app/lib/main.js --remote-debugging-port=8315",
     "dev": "nodemon --watch app/src --ext js,ts --exec 'npm start'",
     "postinstall": "electron-builder install-app-deps",
-    "package": "npm run build && electron-builder --mac"
+    "package": "npm run build && CSC_IDENTITY_AUTO_DISCOVERY=false electron-builder --mac"
   },
   "devDependencies": {
     "@types/electron-positioner": "^4.1.0",
